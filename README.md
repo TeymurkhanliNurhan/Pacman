@@ -1,110 +1,64 @@
-# Pacman Game Project
+# Pacman Game
 
-Welcome to the **Pacman Game Project**! This repository contains a classic Pacman game implementation, developed as a fun and educational project. Whether you're a fan of retro gaming, a student learning game development, or a developer looking to contribute to an open-source project, this repository is for you.
-
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [How to Play](#how-to-play)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-
-## Introduction
-
-Pacman is one of the most iconic arcade games of all time. This project aims to recreate the classic Pacman experience with modern development practices. The game is built using [insert technologies/languages used, e.g., Python, Pygame, JavaScript, etc.], making it accessible for developers of all skill levels to understand, modify, and extend.
+This repository contains a classic implementation of the Pacman game built using Java. The project simulates the famous arcade game where Pacman navigates a maze, collecting dots, avoiding ghosts, and achieving high scores. The game is built with object-oriented programming principles and allows for a dynamic gaming experience with randomized mazes and ghost behavior.
 
 ## Features
 
-- **Classic Gameplay**: Enjoy the traditional Pacman experience with ghosts, pellets, and power-ups.
-- **Customizable Levels**: Easily modify or create new levels by editing the level files.
-- **Score Tracking**: Keep track of your high score as you progress through the game.
-- **Responsive Controls**: Smooth and intuitive controls for an optimal gaming experience.
-- **Cross-Platform Support**: Play the game on Windows, macOS, or Linux.
+- **Classic Gameplay:** Play as Pacman, navigating the maze, eating dots, and avoiding ghosts.
+- **Dynamic Maze Generation:** The maze layout is dynamically generated based on user input and predefined letter files, creating unique game experiences.
+- **Ghost AI:** Ghosts with basic AI behavior chase Pacman, providing an engaging challenge.
+- **Score Tracking:** The game tracks the player's score, displaying it on the screen and updating as dots are collected.
+- **Collision Detection:** Proper collision detection between Pacman and walls, dots, and ghosts.
+- **User Input:** Allows users to control Pacman’s movement with keyboard inputs.
 
 ## Installation
 
-To get started with the Pacman game, follow these steps:
+To run the game locally on your machine, follow these steps:
 
-1. **Clone the Repository**:
+1. **Clone the Repository:**
+
    ```bash
    git clone https://github.com/TeymurkhanliNurhan/Pacman.git
+   ```
+
+2. **Navigate to the Project Folder:**
+
+   ```bash
    cd Pacman
    ```
 
-2. **Install Dependencies**:
-   - If the project uses Python and Pygame:
-     ```bash
-     pip install pygame
-     ```
-   - For other dependencies, refer to the `requirements.txt` file or the documentation.
+3. **Compile the Code:**
 
-3. **Run the Game**:
-   - For Python-based projects:
-     ```bash
-     python main.py
-     ```
-   - For other languages, follow the specific instructions in the repository.
+   If you are using a Java IDE (like IntelliJ IDEA or Eclipse), simply import the project and build it. If you're using the command line:
 
-## How to Play
+   ```bash
+   javac PacmanGame.java
+   ```
 
-- Use the **arrow keys** (or specified controls) to move Pacman around the maze.
-- Collect all the pellets to advance to the next level.
-- Avoid the ghosts! If they catch you, you lose a life.
-- Eat power pellets to temporarily turn the ghosts blue and eat them for extra points.
-- The game ends when you either complete all levels or lose all your lives.
+4. **Run the Game:**
 
-## Project Structure
+   Once compiled, you can run the game with the following command:
 
-The repository is organized as follows:
+   ```bash
+   java PacmanGame
+   ```
 
-```
-Pacman/
-├── assets/            # Contains game assets (sprites, sounds, etc.)
-├── src/               # Source code for the game
-│   ├── main.py        # Main game loop and logic
-│   ├── pacman.py      # Pacman character implementation
-│   ├── ghosts.py      # Ghost AI and behavior
-│   ├── levels.py      # Level design and management
-│   └── utils.py       # Utility functions and helpers
-├── README.md          # This file
-├── requirements.txt   # List of dependencies
-└── LICENSE            # License information
-```
+## Gameplay
 
-## Technologies Used
+1. **Controls:**
+   - Use arrow keys (`Up`, `Down`, `Left`, `Right`) to move Pacman.
+   - Eat all the dots to complete a level.
+   - Avoid the ghosts!
 
-- **Programming Language**: [e.g., Python, JavaScript, etc.]
-- **Game Framework**: [e.g., Pygame, Unity, etc.]
-- **Version Control**: Git and GitHub
-- **Other Tools**: [e.g., Visual Studio Code, Blender for assets, etc.]
+2. **Objective:**
+   - Eat all the dots in the maze while avoiding ghosts to complete each level.
+   - Collect power pellets to temporarily turn the ghosts blue, allowing Pacman to eat them for extra points.
+   - Earn the highest score possible!
 
 ## Contributing
 
-We welcome contributions from the community! Whether you want to fix a bug, add a new feature, or improve the documentation, your help is appreciated. Here's how you can contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix.
-3. Make your changes and test them thoroughly.
-4. Submit a pull request with a detailed description of your changes.
-
-Please ensure your code follows the project's coding standards and includes appropriate documentation.
+Feel free to fork the repository, submit pull requests, or open issues if you encounter bugs or have suggestions for improvements. All contributions are welcome!
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the license terms.
-
-## Acknowledgements
-
-- Special thanks to the original creators of Pacman for inspiring this project.
-- Thanks to the open-source community for providing valuable resources and tools.
-- Shoutout to all contributors who have helped improve this project.
-
----
-
-Enjoy the game, and happy coding! If you have any questions or suggestions, feel free to open an issue or reach out to the maintainers.
-
-**Let's make this Pacman project even better together!** 🎮👾
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
